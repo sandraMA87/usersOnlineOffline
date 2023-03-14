@@ -1,7 +1,15 @@
 function whoIsOnline(users) {
-  let usersOnline = [];
-  // Happy Coding! Puedes modificar solo el cuerpo de esta función
-  return usersOnline;
+  //Primero creamos una variable para saber que usuarios que estén Offline. 
+  let usersOffline = [];
+
+  // Seguidamente creamos un bucle "for" para que nos recorra el string, con el condicional "if" en el caso que su status sea offline y acto seguido usamos un "push" para que nos los agregue.
+  for(let i = 0; i < users.length; i++) {
+    if(users[i].status === "offline") {
+      usersOffline.push(users[i].username);
+    }
+  }
+  return usersOffline;
+  
 }
 
 let friends = [
@@ -39,6 +47,8 @@ let workers = [
     lastActivity: 104,
   },
 ];
+
+
 
 console.log(whoIsOnline(friends)); // ["David", "Bob"]
 console.log(whoIsOnline(workers)); // ["Joel"]
