@@ -50,5 +50,5 @@ let workers = [
 
 
 
-console.log(whoIsOffline(friends)); // ["David", "Bob"]
-console.log(whoIsOffline(workers)); // ["Joel"]
+console.log(whoIsOffline(friends)); 
+console.log(whoIsOffline(workers)); 
