@@ -1,4 +1,4 @@
-function whoIsOnline(users) {
+function whoIsOffine(users) {
   //Primero creamos una variable para saber que usuarios que estén Offline. 
   let usersOffline = [];
 
